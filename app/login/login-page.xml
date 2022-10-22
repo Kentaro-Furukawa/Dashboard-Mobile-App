@@ -1,0 +1,5 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+  <ActionBar title="Login" icon="" />
+    <WebView row="1" loaded="onWebViewLoaded" id="myWebView" src="{{ webViewSrc }}" />
+
+</Page>

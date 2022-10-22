@@ -1,0 +1,28 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+  <ActionBar title="Home" icon="" />
+  <StackLayout class="main-wrap">
+    <StackLayout class="first-wrap">
+      <WrapLayout backgroundColor="lightgray">
+        <Label text="Login"/>
+        <Label text="Morning Cafe"/>
+        <Label text="Memo"/>
+        <Label text="Points"/>
+        <Label text="Blog"/>
+      </WrapLayout> 
+      <Label text="FE Ad" width="80%" backgroundColor="green"/>
+    </StackLayout>
+
+    <StackLayout class="second-wrap">
+      <StackLayout class="taskListTitle" orientation="horizontal" backgroundColor="gray">
+        <Label text="Today's Task" />
+        <Switch checked="true" loaded="onSwitchLoaded" />
+        <Button text="edit" tap="onTap" />
+        <Button text="Add" tap="onTap" />
+      </StackLayout>
+
+    </StackLayout>
+
+
+  </StackLayout>
+
+</Page>

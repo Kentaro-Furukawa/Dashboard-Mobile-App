@@ -1,0 +1,20 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="Information" icon="" />
+<Label row="0" text="Binding the Repeater items property to collection" textWrap="true" />
+<Button row="1" text="Add new item" tap="onTap" />
+<ScrollView row="2">
+    <Repeater  id="firstRepeater" items="{{ myItems }}" />
+</ScrollView>
+<Label row="3" text="Define the Repeater itemTemplate property" textWrap="true" />
+<Button row="4" text="Add new item (Second Repeater)" tap="onSecondTap" />
+<ScrollView row="5" orientation="horizontal">
+    <Repeater items="{{ mySecondItems }}">
+        <Repeater.itemsLayout>
+            <StackLayout orientation="horizontal" />
+        </Repeater.itemsLayout>
+        <Repeater.itemTemplate>
+            <Label text="{{ $value }}" margin="10" />
+        </Repeater.itemTemplate>
+    </Repeater>
+</ScrollView>
+</Page>
