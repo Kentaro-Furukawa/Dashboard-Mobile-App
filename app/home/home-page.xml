@@ -16,8 +16,8 @@
       <StackLayout class="taskListTitle" orientation="horizontal" backgroundColor="gray">
         <Label text="Today's Task" />
         <Switch checked="true" loaded="onSwitchLoaded" />
-        <Button text="edit" tap="onTap" />
-        <Button text="Add" tap="onTap" />
+        <Button text="edit" tap="onTapEdit" />
+        <Button text="Add" tap="onTapAdd" />
       </StackLayout>
 
     </StackLayout>
